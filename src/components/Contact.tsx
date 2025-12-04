@@ -86,8 +86,8 @@ export const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Telegram</h4>
-                      <a href="https://t.me/username" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                        @asadbek_rakhimov
+                      <a target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" href="https://t.me/asadbekodev">
+                        @asadbekodev
                       </a>
                     </div>
                   </div>
