@@ -5,16 +5,16 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-
 export const Contact = () => {
-  const { toast } = useToast();
+  const {
+    toast
+  } = useToast();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: "",
+    message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -23,24 +23,23 @@ export const Contact = () => {
     setTimeout(() => {
       toast({
         title: "Message sent!",
-        description: "Thank you for reaching out. I'll get back to you soon!",
+        description: "Thank you for reaching out. I'll get back to you soon!"
       });
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({
+        name: "",
+        email: "",
+        message: ""
+      });
       setIsSubmitting(false);
     }, 1000);
   };
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData((prev) => ({
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({
       ...prev,
-      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value
     }));
   };
-
-  return (
-    <section id="contact" className="py-20 px-4">
+  return <section id="contact" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
@@ -63,10 +62,7 @@ export const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Email</h4>
-                      <a
-                        href="mailto:asadbek.rakhimov@example.com"
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                      >
+                      <a href="mailto:asadbek.rakhimov@example.com" className="text-muted-foreground hover:text-primary transition-colors">
                         asadbek.rakhimov@example.com
                       </a>
                     </div>
@@ -79,7 +75,7 @@ export const Contact = () => {
                     <div>
                       <h4 className="font-semibold mb-1">Location</h4>
                       <p className="text-muted-foreground">
-                        Tashkent, Uzbekistan
+                        Urgench, Uzbekistan
                       </p>
                     </div>
                   </div>
@@ -90,12 +86,7 @@ export const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Telegram</h4>
-                      <a
-                        href="https://t.me/username"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-muted-foreground hover:text-primary transition-colors"
-                      >
+                      <a href="https://t.me/username" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                         @asadbek_rakhimov
                       </a>
                     </div>
@@ -121,75 +112,31 @@ export const Contact = () => {
               <CardContent className="p-6">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-2">
-                    <label
-                      htmlFor="name"
-                      className="text-sm font-medium"
-                    >
+                    <label htmlFor="name" className="text-sm font-medium">
                       Name
                     </label>
-                    <Input
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="Your name"
-                      required
-                      className="border-border focus:border-primary"
-                    />
+                    <Input id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Your name" required className="border-border focus:border-primary" />
                   </div>
 
                   <div className="space-y-2">
-                    <label
-                      htmlFor="email"
-                      className="text-sm font-medium"
-                    >
+                    <label htmlFor="email" className="text-sm font-medium">
                       Email
                     </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="your.email@example.com"
-                      required
-                      className="border-border focus:border-primary"
-                    />
+                    <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} placeholder="your.email@example.com" required className="border-border focus:border-primary" />
                   </div>
 
                   <div className="space-y-2">
-                    <label
-                      htmlFor="message"
-                      className="text-sm font-medium"
-                    >
+                    <label htmlFor="message" className="text-sm font-medium">
                       Message
                     </label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      placeholder="Tell me about your project or question..."
-                      required
-                      rows={5}
-                      className="border-border focus:border-primary resize-none"
-                    />
+                    <Textarea id="message" name="message" value={formData.message} onChange={handleChange} placeholder="Tell me about your project or question..." required rows={5} className="border-border focus:border-primary resize-none" />
                   </div>
 
-                  <Button
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-300"
-                    size="lg"
-                  >
-                    {isSubmitting ? (
-                      "Sending..."
-                    ) : (
-                      <>
+                  <Button type="submit" disabled={isSubmitting} className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-300" size="lg">
+                    {isSubmitting ? "Sending..." : <>
                         Send Message
                         <Send className="ml-2 h-5 w-5" />
-                      </>
-                    )}
+                      </>}
                   </Button>
                 </form>
               </CardContent>
@@ -197,6 +144,5 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
