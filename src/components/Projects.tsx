@@ -8,29 +8,29 @@ import createxImage from "@/assets/project-createx.jpg";
 
 const projects = [
   {
-    title: "Food Website",
+    title: "Ovqat Veb-sayti",
     description:
-      "A modern food ordering platform featuring an intuitive menu system, cart functionality, and responsive design. Built with focus on user experience and clean UI.",
+      "Zamonaviy ovqat buyurtma platformasi: intuitiv menyu tizimi, savatcha funksiyasi va adaptiv dizayn. Foydalanuvchi tajribasi va toza UI ga e'tibor qaratilgan.",
     image: foodImage,
-    technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
+    technologies: ["HTML", "CSS", "JavaScript", "Adaptiv Dizayn"],
     github: "https://github.com",
     demo: "https://demo.com",
   },
   {
-    title: "Medical Assistance Website",
+    title: "Tibbiy Yordam Veb-sayti",
     description:
-      "Healthcare platform connecting patients with medical services. Features appointment booking, doctor profiles, and health information resources.",
+      "Bemorlarni tibbiy xizmatlar bilan bog'laydigan sog'liqni saqlash platformasi. Uchrashuvni band qilish, shifokor profillari va sog'liq ma'lumotlari resurslari.",
     image: medicalImage,
-    technologies: ["React", "CSS", "API Integration", "Forms"],
+    technologies: ["React", "CSS", "API Integratsiya", "Formalar"],
     github: "https://github.com",
     demo: "https://demo.com",
   },
   {
     title: "Createx Landing Page",
     description:
-      "Corporate landing page for a construction company. Showcases services, portfolio, and company information with modern design principles.",
+      "Qurilish kompaniyasi uchun korporativ landing sahifa. Xizmatlar, portfolio va kompaniya ma'lumotlarini zamonaviy dizayn tamoyillari bilan namoyish etadi.",
     image: createxImage,
-    technologies: ["HTML", "CSS", "JavaScript", "Animation"],
+    technologies: ["HTML", "CSS", "JavaScript", "Animatsiya"],
     github: "https://github.com",
     demo: "https://demo.com",
   },
@@ -41,9 +41,9 @@ export const Projects = () => {
     <section id="projects" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Tanlangan Loyihalar</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my recent work and learning journey through practical projects
+            Amaliy loyihalar orqali so'nggi ishlarim va o'rganish yo'limni namoyish qilaman
           </p>
         </div>
 
@@ -92,7 +92,7 @@ export const Projects = () => {
                     rel="noopener noreferrer"
                   >
                     <Github className="h-4 w-4 mr-2" />
-                    Code
+                    Kod
                   </a>
                 </Button>
                 <Button

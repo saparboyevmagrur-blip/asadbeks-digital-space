@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: "Bosh Sahifa", href: "#home" },
+  { label: "Men Haqimda", href: "#about" },
+  { label: "Ko'nikmalar", href: "#skills" },
+  { label: "Loyihalar", href: "#projects" },
+  { label: "Bog'lanish", href: "#contact" },
 ];
 
 export const Navbar = () => {
@@ -79,7 +79,7 @@ export const Navbar = () => {
               variant="ghost"
               size="icon"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              aria-label="Toggle menu"
+              aria-label="Menyu"
             >
               {isMobileMenuOpen ? (
                 <X className="h-6 w-6" />

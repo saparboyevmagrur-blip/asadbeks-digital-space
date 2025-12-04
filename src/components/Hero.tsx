@@ -24,20 +24,19 @@ export const Hero = () => {
         {/* Left Content */}
         <div className="space-y-6 animate-fade-in-up">
           <div className="space-y-2">
-            <p className="text-primary font-medium">Hi there, I'm</p>
+            <p className="text-primary font-medium">Salom, men</p>
             <h1 className="text-4xl md:text-6xl font-bold text-foreground">
-              Asadbek Rakhimov
+              Asadbek Raximov
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground">
-              Aspiring Developer & TATU Student
+              Boshlang'ich Dasturchi & TATU Talabasi
             </p>
           </div>
 
           <p className="text-foreground/80 text-lg leading-relaxed max-w-lg">
-            18-year-old computer science student passionate about creating
-            innovative web solutions. Currently exploring the world of
-            programming while sharing my journey on Telegram and enjoying
-            football in my free time.
+            18 yoshli kompyuter fanlari talabasi, innovatsion veb-yechimlar yaratishga
+            ishtiyoqli. Hozirda dasturlash olamini o'rganmoqdaman, Telegramda o'z
+            tajribamni ulashaman va bo'sh vaqtimda futbol o'ynayman.
           </p>
 
           {/* CTA Buttons */}
@@ -47,7 +46,7 @@ export const Hero = () => {
               className="bg-gradient-primary shadow-glow hover:shadow-xl transition-all duration-300 hover:scale-105"
               onClick={() => scrollToSection("#contact")}
             >
-              Contact Me
+              Bog'lanish
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button
@@ -56,7 +55,7 @@ export const Hero = () => {
               onClick={() => scrollToSection("#projects")}
               className="border-primary/30 hover:border-primary hover:bg-primary/5 transition-all duration-300"
             >
-              View Projects
+              Loyihalarni Ko'rish
             </Button>
           </div>
 
@@ -98,7 +97,7 @@ export const Hero = () => {
               className="rounded-full hover:bg-primary/10 transition-colors"
               asChild
             >
-              <a href="mailto:asadbek@example.com" aria-label="Email">
+              <a href="mailto:asadbekme2002@gmail.com" aria-label="Email">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
@@ -110,7 +109,7 @@ export const Hero = () => {
           <div className="absolute inset-0 bg-gradient-primary opacity-20 rounded-3xl blur-3xl" />
           <img
             src={heroImage}
-            alt="Asadbek Rakhimov"
+            alt="Asadbek Raximov"
             className="relative rounded-3xl shadow-card w-full h-auto object-cover animate-float"
           />
         </div>

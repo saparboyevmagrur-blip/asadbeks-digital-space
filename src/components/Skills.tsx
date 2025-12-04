@@ -22,16 +22,16 @@ const technicalSkills = [
   },
   {
     icon: Database,
-    name: "Database Basics",
+    name: "Ma'lumotlar Bazasi",
     level: 60,
     color: "from-green-500 to-emerald-500",
   },
 ];
 
 const softSkills = [
-  { icon: MessageSquare, name: "Communication" },
-  { icon: Lightbulb, name: "Problem Solving" },
-  { icon: Code2, name: "Attention to Detail" },
+  { icon: MessageSquare, name: "Muloqot Qobiliyati" },
+  { icon: Lightbulb, name: "Muammolarni Hal Qilish" },
+  { icon: Code2, name: "Tafsilotlarga E'tibor" },
 ];
 
 export const Skills = () => {
@@ -39,16 +39,16 @@ export const Skills = () => {
     <section id="skills" className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Skills & Expertise</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ko'nikmalar va Tajriba</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A growing collection of technical and soft skills I'm developing through my studies and projects
+            O'qishim va loyihalarim orqali rivojlantirmoqda bo'lgan texnik va shaxsiy ko'nikmalarim
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Technical Skills */}
           <div className="space-y-6 animate-slide-in-left">
-            <h3 className="text-2xl font-bold mb-6">Technical Skills</h3>
+            <h3 className="text-2xl font-bold mb-6">Texnik Ko'nikmalar</h3>
             {technicalSkills.map((skill, index) => (
               <Card
                 key={skill.name}
@@ -80,7 +80,7 @@ export const Skills = () => {
 
           {/* Soft Skills */}
           <div className="space-y-6 animate-slide-in-right">
-            <h3 className="text-2xl font-bold mb-6">Soft Skills</h3>
+            <h3 className="text-2xl font-bold mb-6">Shaxsiy Ko'nikmalar</h3>
             <div className="space-y-4">
               {softSkills.map((skill, index) => (
                 <Card
@@ -103,11 +103,11 @@ export const Skills = () => {
             {/* Additional Info Card */}
             <Card className="border-primary/30 bg-gradient-hero">
               <CardContent className="p-6">
-                <h4 className="font-semibold mb-2 text-lg">Currently Learning</h4>
+                <h4 className="font-semibold mb-2 text-lg">Hozirda O'rganmoqdaman</h4>
                 <p className="text-sm text-foreground/80">
-                  I'm constantly expanding my skill set through online courses, university
-                  projects, and personal experimentation. My focus is on mastering modern
-                  web development technologies and best practices.
+                  Men onlayn kurslar, universitet loyihalari va shaxsiy tajribalar orqali
+                  doimiy ravishda ko'nikmalarimni kengaytirmoqdaman. Asosiy e'tiborim zamonaviy
+                  veb-dasturlash texnologiyalari va eng yaxshi amaliyotlarni o'zlashtirishda.
                 </p>
               </CardContent>
             </Card>
