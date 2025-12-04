@@ -1,27 +1,20 @@
 import { Code2, Newspaper, Trophy } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-
-const interests = [
-  {
-    icon: Code2,
-    title: "Programming",
-    description: "Passionate about learning new technologies and building innovative solutions.",
-  },
-  {
-    icon: Newspaper,
-    title: "Telegram Blogging",
-    description: "Sharing my journey and insights with a growing community of tech enthusiasts.",
-  },
-  {
-    icon: Trophy,
-    title: "Football",
-    description: "Staying active and building teamwork skills through my favorite sport.",
-  },
-];
-
+const interests = [{
+  icon: Code2,
+  title: "Programming",
+  description: "Passionate about learning new technologies and building innovative solutions."
+}, {
+  icon: Newspaper,
+  title: "Telegram Blogging",
+  description: "Sharing my journey and insights with a growing community of tech enthusiasts."
+}, {
+  icon: Trophy,
+  title: "Football",
+  description: "Staying active and building teamwork skills through my favorite sport."
+}];
 export const About = () => {
-  return (
-    <section id="about" className="py-20 px-4 bg-muted/30">
+  return <section id="about" className="py-20 px-4 bg-muted/30">
       <div className="container mx-auto">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
@@ -65,7 +58,7 @@ export const About = () => {
             <div className="grid grid-cols-2 gap-4 pt-4">
               <div className="space-y-1">
                 <p className="text-sm text-muted-foreground">Location</p>
-                <p className="font-medium">Tashkent, Uzbekistan</p>
+                <p className="font-medium">Urgench, Uzbekistan</p>
               </div>
               <div className="space-y-1">
                 <p className="text-sm text-muted-foreground">Education</p>
@@ -85,12 +78,9 @@ export const About = () => {
           {/* Right Side - Interests */}
           <div className="space-y-4 animate-slide-in-right">
             <h3 className="text-2xl font-bold mb-6">My Interests</h3>
-            {interests.map((interest, index) => (
-              <Card
-                key={interest.title}
-                className="border-border hover:border-primary/50 transition-all duration-300 hover:shadow-card group"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
+            {interests.map((interest, index) => <Card key={interest.title} className="border-border hover:border-primary/50 transition-all duration-300 hover:shadow-card group" style={{
+            animationDelay: `${index * 100}ms`
+          }}>
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="h-12 w-12 rounded-lg bg-gradient-primary flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
@@ -104,11 +94,9 @@ export const About = () => {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
